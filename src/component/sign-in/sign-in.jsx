@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 import FormInput from '../form-input/form-input';
 import CustomButton from '../custom-button/custom-button';
-import {connect} from 'react-redux';
 import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
-import {setCurrentUser} from '../../redux/user/user.actions';
 
 import './sign-in.scss';
 
 class SignIn extends Component {
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
         this.state = {
             email: '',
             password: ''
@@ -75,9 +73,6 @@ class SignIn extends Component {
     }
 }
 
-const mapDispatchToProps = dispatch => ({
-    setCurrentUser: user => dispatch(setCurrentUser(user))
-  })
 
 export default SignIn;
 // export default connect(null,mapDispatchToProps)(SignIn);
