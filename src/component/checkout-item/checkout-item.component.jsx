@@ -6,7 +6,6 @@ import {connect} from 'react-redux';
 
 const CheckoutItem = ({cartItem, dispatch}) => {
     const {name, quantity, price, imageUrl} = cartItem;
-    console.log("dispatch", dispatch);
     return(
         <div className='checkout-item'>
         <div className='image-container'>
