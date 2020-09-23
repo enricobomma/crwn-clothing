@@ -5,8 +5,8 @@ import {Route} from 'react-router-dom';
 import './collection-preview.scss';
 
 const CollectionPreview = ({title, items, match}) => {
-    console.log("title",title)
-    console.log("items",items)
+    // console.log("title",title)
+    // console.log("items",items)
     return (
         <div className='collection-preview'>
         {/* <Route path={`${match.path}/${title}`} component={CollectionOverview}>
